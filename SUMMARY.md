@@ -1,5 +1,11 @@
 # Summary
 
-* [Introduction](chapter1.md)
-* [Getting started](chapter2.md)
+* [Introduction](README.md)
+* [Introduction](introduction.md)
+* [Getting started](getting-started.md)
+* [Features](features.md)
+* [Glossary](glossary.md)
+* [External links](external-links.md)
+* [FAQs](faqs.md)
+* [Contact](contact.md)
 
