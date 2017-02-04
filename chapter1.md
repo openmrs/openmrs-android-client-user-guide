@@ -5,7 +5,7 @@
 * Introduction to OpenMRS
 * Introduction to OpenMRS Android Client
 
-## Getting started
+
 
 ## Features
 
