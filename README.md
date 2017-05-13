@@ -1,4 +1,4 @@
-#OpenMRS Android Client User Guide
+# OpenMRS Android Client User Guide
 
-###Welcome to OpenMRS
-####Write Code, Save Lives 
+### Welcome to OpenMRS
+#### Write Code, Save Lives .
