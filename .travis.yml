@@ -8,7 +8,7 @@ before_script:
 script:
   - gitbook install && gitbook build
 before_deploy:
-  - gitbook pdf . openmrs-android-client-user-guide.pdf
+  - gitbook pdf . _book/openmrs-android-client-user-guide.pdf
 deploy:
   provider: pages
   skip_cleanup: true
