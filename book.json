@@ -4,7 +4,7 @@
     ],
     "pluginsConfig": {
         "edit-link": {
-          "base": "https://github.com/openmrs/openmrs-android-client-user-guide/tree/master",
+          "base": "https://github.com/openmrs/openmrs-android-client-user-guide/edit/master",
           "label": "EDIT"
         }
     }
