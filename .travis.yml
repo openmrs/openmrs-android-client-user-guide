@@ -7,8 +7,6 @@ before_script:
   - sudo apt-get install -y xvfb imagemagick libxcomposite-dev
 script:
   - gitbook install && gitbook build
-before_deploy:
-  - gitbook pdf . _book/openmrs-android-client-user-guide.pdf
 deploy:
   provider: pages
   skip_cleanup: true
