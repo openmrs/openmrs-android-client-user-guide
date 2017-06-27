@@ -2,8 +2,8 @@ language: node_js
 node_js:
   - "node"
 before_script:
-  - npm install -g gitbook-cli ebook-convert svgexport
-  - sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+  - npm install -g gitbook-cli@2.3.0 ebook-convert@0.1.0 svgexport@0.3.2
+  - sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/v2.85.1/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
   - sudo apt-get install -y xvfb imagemagick libxcomposite-dev
 script:
   - gitbook install && gitbook build
