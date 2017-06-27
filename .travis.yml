@@ -6,9 +6,8 @@ before_script:
   - sudo mkdir -p /opt/calibre && sudo rm -rf /opt/calibre/* && sudo wget -P /opt/calibre/txz https://download.calibre-ebook.com/2.85.1/calibre-2.85.1-x86_64.txz && sudo tar xvf /opt/calibre/txz/calibre-2.85.1-x86_64.txz -C /opt/calibre && sudo /opt/calibre/calibre_postinstall
   - sudo apt-get install -y xvfb imagemagick libxcomposite-dev
 script:
-  - gitbook install && gitbook build
-before_deploy:
   - gitbook pdf . _book/openmrs-android-client-user-guide.pdf
+  - gitbook install && gitbook build
 deploy:
   provider: pages
   skip_cleanup: true
