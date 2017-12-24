@@ -1,7 +1,7 @@
 [![OpenMRS Logo](http://i.imgur.com/fpVkTZk.png)](http://www.openmrs.org)
 ### OpenMRS Android Client User Guide
 
-A guide for users to familiarize themselves with the OpenMRS Android Client. This guide is both: a starting point for new developers who want to contribute to the Android Client; and as a reference to problems which developers may face. It contains detailed descriptions of all the features along with how one can use them. This guide will have FAQs, Troubshooting, Glossary and Contact sections which will be helpful for any user facing problems.
+A guide for users to familiarize themselves with the OpenMRS Android Client. This guide is both: a starting point for new developers who want to contribute to the Android Client; and as a reference to problems which developers may face. It contains detailed descriptions of all the features along with how one can use them. This guide will have FAQs, Troubleshooting, Glossary and Contact sections which will be helpful for any user facing problems.
 
 ### What is OpenMRS?
 
