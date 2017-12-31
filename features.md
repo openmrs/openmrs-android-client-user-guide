@@ -25,7 +25,15 @@
    2. Adding Patient Photo
 
    3. Finding Similar Patients
-   
+
+* ### Updating Patients
+
+  ![Updating process](assets/openmrs_android_updating_patients_1.png)
+
+  To update a patient's data, simply click on the patient in the **Find Patients** menu, then click the menu icon (three-dot icon) and select **Update Patient**. Now you can update any fields such as his/her name, address, phone number, etc.
+
+  When you are done, simply press the **Submit** button at the bottom, and your patient will be updated. You can also cancel the updating process by clicking the *arrow* button in the Action bar.
+
 * ### Viewing Patients
 
    1. Downloading Patients
