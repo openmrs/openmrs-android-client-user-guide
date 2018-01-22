@@ -20,11 +20,35 @@
     
 * ### Registering Patients
 
-   1. Entering Patient Details
+  You can register new patients by clicking on the **Register Patient** button in the home menu. When online, created patients are automatically synchronized to the server wih a unique patient ID. When offline, created patients are saved in the user's local database and are synced when the user is connected to the internet. See [Working Offline](#working-offline) for more details.
 
-   2. Adding Patient Photo
+   #### 1. Entering Patient Details
 
-   3. Finding Similar Patients
+   <!-- -->
+
+   ![Blank registration](assets/openmrs_android_registering_patients_1.png)
+
+   After clicking **Register Patient**, you will be presented with a form to fill out the patient's basic information. You should input the patient's name, gender and birth date. You'll also need to fill at least one field of the patient's contact information. When done, press "Register Patient" button at the bottom.
+
+   If you did not enter the required details, you will be shown a message showing which fields are needed to be filled in order to complete registration.
+
+   ![Required fields and patient summary](assets/openmrs_android_registering_patients_2.png)
+
+   After successfully adding a new patient, a summary regarding patient's data along with the patient photo is shown. From here you can start to interact with the patient, such as visiting the patient and entering biometrics data in the patient's vitals. These events are easily accessed by either swiping right/left or clicking on the event's tab. Take a look at [Viewing Patients](#viewing-patients) for more things to do with a patient.
+
+   You can also update or delete the patient by heading to the menu and clicking **Update Patient** or **Delete Patient**.
+
+   #### 2. Adding Patient Photo
+
+   ![Patient photo](assets/openmrs_android_registering_patients_3.png)
+
+   A cool feature in the Android client during registration is the ability to upload a photo related to the patient. To do this, click on the camera icon. You can either take a photo now or choose an existing photo in your phone/tablet. The photo will then be cropped to match the requried dimensions.
+
+   #### 3. Finding Similar Patients
+
+   ![Similar patients](assets/openmrs_android_registering_patients_4.png)
+
+   When [registering a new patient offline](#working-offline), similar existing patients will be shown to help you merge the patients. Similar patients are defined by patients having the same **names**, **gender**, **address** and **date of birth**. You can choose either to merge to an existing patient, or register the patient as new. Either way, the patient data will be synced when connected to the internet.
 
 * ### Updating Patients
 
