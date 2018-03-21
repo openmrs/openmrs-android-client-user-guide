@@ -1,0 +1,93 @@
+Security
+OpenMRS is in contact with Security PS, an enterprise security consulting company.Security PS donated time to enhance the security of OpenMRS. Their application security experts found and privately reported software security weaknesses to the OpenMRS team. 
+The development team have analyzed Security PS’s results and have made and are making plans to address the discovered issues. 
+The org.openmrs.util.Security class provides basic encryption and decryption methods for use in the API.
+The security class used by Andro client is :
+java.lang.Object
+org.openmrs.util.Security and then public class that has to be implemented or added extends Object class.
+The openMRS's Security class helps in dealing with hashing password entered by the user during logging in Android Client app. The methods that could be inherited from the class java.lang.Object are clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait.
+The methods and classes that are being used for securing the stored passwords and data under the Android Client app are mentioned below along with their descriptions:
+        1. encrypt
+               public static String encrypt(String text)
+               Description:
+                  encrypt text using stored initVector and securityKey
+               Parameters:
+                  text -
+               Returns:
+                  encrypted text
+               Since:
+                  1.9
+               Expected Behaviour:
+                  Should encrypt short and long text
+        2.decrypt
+               public static String decrypt(String text, byte[] initVector,byte[] secretKey)
+               Description: decrypt text to a string with specific initVector and secretKey; rarely used except in testing and where                                   specifically necessary
+               Parameters:
+                   text - text to be decrypted
+                   initVector - custom init vector byte array
+                   secretKey - custom secret key byte array
+               Returns:
+                    decrypted text
+               Since:
+                    1.9
+        3.decrypt
+               public static String decrypt(String text)
+               Description: decrypt text using stored initVector and securityKey
+               Parameters:
+                  text - text to be decrypted
+               Returns:
+                  decrypted text
+               Since:
+                  1.9
+               Expected Behaviour:
+                  Should decrypt short and long text
+        4.getSavedInitVector
+               public static byte[] getSavedInitVector()
+               Description: retrieve the stored init vector from runtime properties
+               Returns:
+                  stored init vector byte array
+               Since:
+                  1.9
+        5.generateNewInitVector
+               public static byte[] generateNewInitVector()
+               Description: generate a new cipher initialization vector; should only be called once in order to not invalidate all                                   encrypted data
+               Returns:
+                  a random array of 16 bytes
+               Since:
+                  1.9
+        6.getSavedSecretKey
+               public static byte[] getSavedSecretKey()
+               Description: retrieve the secret key from runtime properties
+               Returns:
+                  stored secret key byte array
+               Since:
+                  1.9
+        7.generateNewSecretKey
+               public static byte[] generateNewSecretKey()
+               Description: generate a new secret key; should only be called once in order to not invalidate all encrypted data
+               Returns:
+                  generated secret key byte array
+               Since:
+                  1.9
+         8.getRandomToken
+                public static String getRandomToken()
+                             throws APIException
+                Description: This method will generate a random string
+                Returns:
+                    a secure random token.
+                Throws:
+                    APIException
+          9.hashMatches
+                public static boolean hashMatches(String hashedPassword,String passwordToHash)                 
+                Description: Compare the given hash and the given string-to-hash to see if they are equal. The string-to-hash is usually                              of the form password + salt. This should be used so that this class can compare against the new correct                                  hashing algorithm and the old incorrect hashing algorithm.
+                Parameters:
+                      hashedPassword - a stored password that has been hashed previously
+                      passwordToHash - a string to encode/hash and compare to hashedPassword
+                Returns:
+                      true/false whether the two are equal
+                Since:
+                      1.5
+                Expected Behaviour:
+                      Should match strings hashed with incorrect sha1 algorithm
+                      Should match strings hashed with sha1 algorithm
+                      Should match strings hashed with sha512 algorithm and 128 characters salt
