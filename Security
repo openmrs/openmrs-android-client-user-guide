@@ -1,6 +1,11 @@
 Security
-OpenMRS is in contact with Security PS, an enterprise security consulting company.Security PS donated time to enhance the security of OpenMRS. Their application security experts found and privately reported software security weaknesses to the OpenMRS team. 
-The development team have analyzed Security PS’s results and have made and are making plans to address the discovered issues. 
+openMRS uses a variation of Luhn algorithm also known as 'mod10' algorithm. For example:
+Suppose we have a number- "139" Now we start doubling every other number starting from right to left. In this case we will double number 9 and 1
+                9x2=18(1 and 8 will be treated as two different digits)
+                3=3(every other number is doubled therefore 3 remains unchanged)
+                1x2=2
+     now summ all the digits i.e., 1+8+3+2=14 and the check digit is the amount needed to reach a number divisible by ten. For a sum of '14', the check digit is '6' since '20' is the next number divisible by ten
+openMRS has borrowed the variation on the Luhn algorithm used by Regenstrief Institute, Inc. In this variation, letters as well as numbers in the identifier (i.e., alphanumeric identifiers) is allowed. This allows for an identifier like "139MT" that the original Luhn algorithm cannot handle (it's limited to numeric digits only).
 The org.openmrs.util.Security class provides basic encryption and decryption methods for use in the API.
 The security class used by Andro client is :
 java.lang.Object
@@ -15,10 +20,7 @@ The methods and classes that are being used for securing the stored passwords an
                   text -
                Returns:
                   encrypted text
-               Since:
-                  1.9
-               Expected Behaviour:
-                  Should encrypt short and long text
+              
         2.decrypt
                public static String decrypt(String text, byte[] initVector,byte[] secretKey)
                Description: decrypt text to a string with specific initVector and secretKey; rarely used except in testing and where                                   specifically necessary
@@ -28,56 +30,15 @@ The methods and classes that are being used for securing the stored passwords an
                    secretKey - custom secret key byte array
                Returns:
                     decrypted text
-               Since:
-                    1.9
-        3.decrypt
-               public static String decrypt(String text)
-               Description: decrypt text using stored initVector and securityKey
-               Parameters:
-                  text - text to be decrypted
-               Returns:
-                  decrypted text
-               Since:
-                  1.9
-               Expected Behaviour:
-                  Should decrypt short and long text
-        4.getSavedInitVector
-               public static byte[] getSavedInitVector()
-               Description: retrieve the stored init vector from runtime properties
-               Returns:
-                  stored init vector byte array
-               Since:
-                  1.9
-        5.generateNewInitVector
-               public static byte[] generateNewInitVector()
-               Description: generate a new cipher initialization vector; should only be called once in order to not invalidate all                                   encrypted data
-               Returns:
-                  a random array of 16 bytes
-               Since:
-                  1.9
-        6.getSavedSecretKey
-               public static byte[] getSavedSecretKey()
-               Description: retrieve the secret key from runtime properties
-               Returns:
-                  stored secret key byte array
-               Since:
-                  1.9
-        7.generateNewSecretKey
+                   
+        3.generateNewSecretKey
                public static byte[] generateNewSecretKey()
                Description: generate a new secret key; should only be called once in order to not invalidate all encrypted data
                Returns:
                   generated secret key byte array
-               Since:
-                  1.9
-         8.getRandomToken
-                public static String getRandomToken()
-                             throws APIException
-                Description: This method will generate a random string
-                Returns:
-                    a secure random token.
-                Throws:
-                    APIException
-          9.hashMatches
+               
+        
+        4.hashMatches
                 public static boolean hashMatches(String hashedPassword,String passwordToHash)                 
                 Description: Compare the given hash and the given string-to-hash to see if they are equal. The string-to-hash is usually                              of the form password + salt. This should be used so that this class can compare against the new correct                                  hashing algorithm and the old incorrect hashing algorithm.
                 Parameters:
@@ -85,9 +46,6 @@ The methods and classes that are being used for securing the stored passwords an
                       passwordToHash - a string to encode/hash and compare to hashedPassword
                 Returns:
                       true/false whether the two are equal
-                Since:
-                      1.5
-                Expected Behaviour:
-                      Should match strings hashed with incorrect sha1 algorithm
-                      Should match strings hashed with sha1 algorithm
-                      Should match strings hashed with sha512 algorithm and 128 characters salt
+                      
+              
+              
