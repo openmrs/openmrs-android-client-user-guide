@@ -1,0 +1,51 @@
+Security
+openMRS uses a variation of Luhn algorithm also known as 'mod10' algorithm. For example:
+Suppose we have a number- "139" Now we start doubling every other number starting from right to left. In this case we will double number 9 and 1
+                9x2=18(1 and 8 will be treated as two different digits)
+                3=3(every other number is doubled therefore 3 remains unchanged)
+                1x2=2
+     now summ all the digits i.e., 1+8+3+2=14 and the check digit is the amount needed to reach a number divisible by ten. For a sum of '14', the check digit is '6' since '20' is the next number divisible by ten
+openMRS has borrowed the variation on the Luhn algorithm used by Regenstrief Institute, Inc. In this variation, letters as well as numbers in the identifier (i.e., alphanumeric identifiers) is allowed. This allows for an identifier like "139MT" that the original Luhn algorithm cannot handle (it's limited to numeric digits only).
+The org.openmrs.util.Security class provides basic encryption and decryption methods for use in the API.
+The security class used by Andro client is :
+java.lang.Object
+org.openmrs.util.Security and then public class that has to be implemented or added extends Object class.
+The openMRS's Security class helps in dealing with hashing password entered by the user during logging in Android Client app. The methods that could be inherited from the class java.lang.Object are clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait.
+The methods and classes that are being used for securing the stored passwords and data under the Android Client app are mentioned below along with their descriptions:
+        1. encrypt
+               public static String encrypt(String text)
+               Description:
+                  encrypt text using stored initVector and securityKey
+               Parameters:
+                  text -
+               Returns:
+                  encrypted text
+              
+        2.decrypt
+               public static String decrypt(String text, byte[] initVector,byte[] secretKey)
+               Description: decrypt text to a string with specific initVector and secretKey; rarely used except in testing and where                                   specifically necessary
+               Parameters:
+                   text - text to be decrypted
+                   initVector - custom init vector byte array
+                   secretKey - custom secret key byte array
+               Returns:
+                    decrypted text
+                   
+        3.generateNewSecretKey
+               public static byte[] generateNewSecretKey()
+               Description: generate a new secret key; should only be called once in order to not invalidate all encrypted data
+               Returns:
+                  generated secret key byte array
+               
+        
+        4.hashMatches
+                public static boolean hashMatches(String hashedPassword,String passwordToHash)                 
+                Description: Compare the given hash and the given string-to-hash to see if they are equal. The string-to-hash is usually                              of the form password + salt. This should be used so that this class can compare against the new correct                                  hashing algorithm and the old incorrect hashing algorithm.
+                Parameters:
+                      hashedPassword - a stored password that has been hashed previously
+                      passwordToHash - a string to encode/hash and compare to hashedPassword
+                Returns:
+                      true/false whether the two are equal
+                      
+              
+              
