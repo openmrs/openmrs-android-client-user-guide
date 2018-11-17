@@ -4,7 +4,8 @@ OpenMRS ensures the security of data stored through various encryption algorithm
 
 #### 1. Patient Identifiers are Validated
 
-Specifically, OpenMRS uses a variation of Luhn algorithm also known as the 'mod10' algorithm. Simply put, this algorithm has the capacity to validate a variety of identification numbers. In fact, this is commonly used to validate credit card numbers. For more information, please check out the following [link](https://www.geeksforgeeks.org/luhn-algorithm/ "Luhn Algorithm") regarding the Luhn algorithm to gain a better understanding how the algorithm works.
+
+Specifically, OpenMRS uses a variation of Luhn algorithm also known as the 'mod10' algorithm. Simply put, this algorithm has the capacity to validate a variety of identification numbers. In fact, this is commonly used to validate credit card numbers. For more information, please check out the following [link](https://www.geeksforgeeks.org/luhn-algorithm/ "Luhn Algorithm") regarding the Luhn algorithm to gain a better understanding on how it works.
 
 OpenMRS utilizes a variation of the Luhn algorithm which the Regenstrief Institue has created. In this variation, letters as well as numbers in the identifier (i.e., alphanumeric identifiers) are allowed. 
 
