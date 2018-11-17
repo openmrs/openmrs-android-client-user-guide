@@ -6,6 +6,7 @@
 * [Feeding Data](feeding-data.md)
 * [Glossary](glossary.md)
 * [External links](external-links.md)
+* [Troubleshooting](troubleshooting.md)
 * [FAQs](faqs.md)
 * [Contact](contact.md)
 
