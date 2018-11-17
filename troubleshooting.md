@@ -2,7 +2,14 @@
 
 #### Can't Login?
 
-There are a few things you would need to first take note in logging in. Make sure that you enter a valid server for the URL address. Moreover, the username and password does not correspond to your OpenMRS ID. Follow the information on the link [here](https://openmrs.github.io/openmrs-android-client-user-guide/introduction.html) to log into the test server. 
+There are a few things you would need to first take note in logging in. Make sure that you enter a valid server for the URL address. In setting up a customized server, you may request one from helpdesk or server maintainers. Due to a limitation of resources, do note however that these customized test servers are only meant to be used for a limited time only. For more information regarding different testing servers, please visit the following [link](https://wiki.openmrs.org/display/ISM/OpenMRS+environments). Yould could also revert back of the guide regarding features and using the most common test server on the following [link](https://wiki.openmrs.org/display/ISM/OpenMRS+environments).
+
+Aside from this, do note that the username and password does not correspond to your OpenMRS ID. Commonly, you would opt to use 
+
+username: admin
+password: Admin123
+
+if you are using the test server. 
 
 #### Have Another Issue?
 
