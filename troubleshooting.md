@@ -11,11 +11,11 @@ password: Admin123
 
 if you are using the test server. 
 
-#### Have Another Issue?
+#### Have an Issue?
 
-This guide covers the basic development setup and things to take note off while using the android client. Make sure the guide first. The guide walks through the basics of entering patient details, uploading patient photos, etc, which you could check out [here](https://openmrs.github.io/openmrs-android-client-user-guide/features.html).
+This guide covers the basic setup and instructions to take note of while using the Android client. Make sure to refer to the guide first. The guide walks through the basics of entering patient details, uploading patient photos, etc. which you may check out [in this page](https://openmrs.github.io/openmrs-android-client-user-guide/features.html).
 
-However, if there are other issues you come across, you could take the following steps.
+However, if there are other issues you come across, you could take the following steps:
 
 #### 1. Visit OpenMRS Talk 
 
