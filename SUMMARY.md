@@ -2,6 +2,12 @@
 
 * [Getting started](getting-started.md)
 * [Features](features.md)
+* [Patient Registration](patient-registration.md)
+  * [Registering a new patient](patient-registration.md#registering-a-new-patient)
+  * [Updating a patient](patient-registration.md#updating-a-patient)
+  * [Viewing patients](patient-registration.md#viewing-patients)
+  * [Downloading patients](patient-registration.md#downloading-patients)
+  * [Finding existing patients](patient-registration.md#finding-existing-patients)   
 * [Patient Activity](patient-activity.md)
     * [Diagnosis](patient-activity.md#diagnosis)
     * [Visits](patient-activity.md#visits)
