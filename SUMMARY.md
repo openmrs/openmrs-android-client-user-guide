@@ -9,6 +9,7 @@
     * [Encounters](patient-activity.md#encounters)
     * [Charts](patient-activity.md#charts)
 * [Feeding Data](feeding-data.md)
+* [Working Offline](working-offline.md)
 * [Security](security.md)
 * [Glossary](glossary.md)
 * [External links](external-links.md)
