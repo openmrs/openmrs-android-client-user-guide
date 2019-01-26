@@ -1,7 +1,6 @@
 # Summary
 
 * [Getting started](getting-started.md)
-* [Features](features.md)
 * [Patient Registration](patient-registration.md)
   * [Registering a new patient](patient-registration.md#registering-a-new-patient)
   * [Updating a patient](patient-registration.md#updating-a-patient)
@@ -16,6 +15,7 @@
     * [Charts](patient-activity.md#charts)
 * [Feeding Data](feeding-data.md)
 * [Working Offline](working-offline.md)
+* [Settings](settings.md)
 * [Security](security.md)
 * [Glossary](glossary.md)
 * [External links](external-links.md)
