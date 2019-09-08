@@ -19,7 +19,7 @@ To update a Provider, **swipe left** on the Provider to reveal additional action
 
 #### Delete Providers
 ![Delete Provider](assets/provider_delete_confirmation.png)
-To delete a Provider, **swipe left** on the Provider to reveal additional actions(*Update and Delete*). Click on the **delete** button and a confirmation to delete the Provider will be shown.
+To delete a Provider, **swipe left** on the Provider to reveal additional actions (*Update and Delete*). Click on the **delete** button and a confirmation to delete the Provider will be shown.
 
 
 #### Provider Relationship Dashboard
