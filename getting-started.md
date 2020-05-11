@@ -18,7 +18,7 @@ Here, you may provide the address to an OpenMRS server as well as login credenti
 
 ![OpenMRS Android Client login screen][login]
 
-[login]: assets/android_client_login_screen.png
+[login]: assets/android_client_login_screen.jpeg
 
 **NB:** To be able to login you must provide a location (e.g. "Inpatient Ward") for the session in the dropdown list.
 
@@ -28,7 +28,7 @@ After having successfully logged in, you may perform different activities. For i
 There will be an option for **unidentified patient** where you just need to enter Gender and estimated age.
 When you have entered all the required information, press the "Register Patient" button at the Action Bar. If the registration was successful, you will be redirected to Patient Dashboard from where you can access his/her visits and vitals information etc.
 
-![OpenMRS Android Client patient registration 1][patient1]
+![OpenMRS Android Client patient registration][patient1]
 
-[patient1]: assets/android_client_registration_screen.png
+[patient1]: assets/android_client_registration_screen.jpeg
 
