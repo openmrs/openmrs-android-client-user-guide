@@ -18,16 +18,17 @@ Here, you may provide the address to an OpenMRS server as well as login credenti
 
 ![OpenMRS Android Client login screen][login]
 
-[login]: assets/openmrs_android_login.png
+[login]: assets/android_client_login_screen.jpeg
 
 **NB:** To be able to login you must provide a location (e.g. "Inpatient Ward") for the session in the dropdown list.
 
 ### Use Case - Patient Registration
 
-After having successfully logged in, you may perform different activities. For instance, if you wish to register a new patient, click the "Register Patient" icon. You will be presented with a form in which you fill in the patient's information. When you have entered all the required information, press the "Register Patient" button at the end of the form. If the registration was successful, you will be presented with the patient's summary view from which you can access his/her visits and vitals information etc.
+After having successfully logged in, you may perform different activities. For instance, if you wish to register a new patient, click the "Register Patient" icon. You will be presented with a form in which you fill in the patient's information.
+There will be an option for **unidentified patient** where you just need to enter Gender and estimated age.
+When you have entered all the required information, press the "Register Patient" button at the Action Bar. If the registration was successful, you will be redirected to Patient Dashboard from where you can access his/her visits and vitals information etc.
 
-![OpenMRS Android Client patient registration 1][patient1]
-![OpenMRS Android Client patient registration 2][patient2]
+![OpenMRS Android Client patient registration][patient1]
 
-[patient1]: assets/openmrs_android_register_patient_1.png
-[patient2]: assets/openmrs_android_register_patient_2.png
+[patient1]: assets/android_client_registration_screen.jpeg
+
