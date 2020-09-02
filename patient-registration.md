@@ -4,13 +4,13 @@ You can register new patients by clicking on the **Register Patient** button in 
 
 #### 1. Entering Patient Details
 
-![Blank registration](assets/openmrs_android_registering_patients_1.png)
+![Blank registration](assets/android_client_registration.jpg)
 
 After clicking **Register Patient**, you will be presented with a form to fill out the patient's basic information. You should input the patient's name, gender and birth date. You'll also need to fill at least one field of the patient's contact information. When done, press "Register Patient" button at the bottom.
 
 If you did not enter the required details, you will be shown a message showing which fields are needed to be filled in order to complete registration.
 
-![Required fields and patient summary](assets/openmrs_android_registering_patients_2.png)
+![Required fields and patient summary](assets/android_client_error.jpg)
 
 After successfully adding a new patient, a summary regarding patient's data along with the patient photo is shown. From here you can start to interact with the patient, such as visiting the patient and entering biometrics data in the patient's vitals. These events are easily accessed by either swiping right/left or clicking on the event's tab. Take a look at [Viewing Patients](#viewing-patients) for more things to do with a patient.
 
@@ -18,7 +18,7 @@ You can also update or delete the patient by heading to the menu and clicking **
 
 #### 2. Adding Patient Photo
 
-![Patient photo](assets/openmrs_android_registering_patients_3.png)
+![Patient photo](assets/android_client_upload_photo.jpg)
 
 A cool feature in the Android client during registration is the ability to upload a photo related to the patient. To do this, click on the camera icon. You can either take a photo now or choose an existing photo in your phone/tablet. The photo will then be cropped to match the requried dimensions.
 
@@ -30,7 +30,7 @@ When [registering a new patient offline](#working-offline), similar existing pat
 
 ## Updating a Patient
 
-![Updating process](assets/openmrs_android_updating_patients_1.png)
+![Updating process](assets/android_client_update_patient.jpg)
 
 To update a patient's data, simply click on the patient in the **Find Patients** menu, then click the menu icon (three-dot icon) and select **Update Patient**. Now you can update any fields such as his/her name, address, phone number, etc.
 
@@ -52,6 +52,6 @@ To download patients, simply click **Download** for patients you want to synchro
 
 ## Finding Existing Patients
 
-![Finding patients](assets/openmrs_android_viewing_patients_3.png)
+![Finding patients](assets/android_client_search_patient.jpg)
 
 To find locally synchronized patients, press on the menu icon (3-dot icon) and click **Find Patients**. Now enter a name query and it will return patients matching the inputted query.
