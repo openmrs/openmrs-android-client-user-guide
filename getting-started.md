@@ -4,6 +4,9 @@
 To install the OpenMRS Android Client on your Android device, head over to Google Play using this link:
 https://play.google.com/store/apps/details?id=org.openmrs.mobile
 
+Optionally, you can install the OpenMRS Android Client using the latest Github build releases. You can find them using this link:
+https://github.com/openmrs/openmrs-contrib-android-client/releases
+
 ### Requirements:
 * Android device with Android OS 4.1 or higher
 * OpenMRS server 2.2 or higher with REST module installed
